@@ -1,0 +1,114 @@
+                 Grand Master is running on host Mac-Pro
+                 rank #     1 is running on host Mac-Pro
+                 rank #     2 is running on host Mac-Pro
+                 rank #     3 is running on host Mac-Pro
+                 rank #     4 is running on host Mac-Pro
+                 rank #     5 is running on host Mac-Pro
+                 rank #     6 is running on host Mac-Pro
+                 rank #     7 is running on host Mac-Pro
+                 rank #     8 is running on host Mac-Pro
+                 rank #     9 is running on host Mac-Pro
+                 rank #    10 is running on host Mac-Pro
+                 rank #    11 is running on host Mac-Pro
+
+          ******************************************************
+          *      Firefly version 8.2.0, build number 10203     *
+          *   Compiled on    Monday,    19-09-2016, 15:30:23   *
+          *Code development and Intel/AMD specific optimization*
+          *  Copyright (c) 1994, 2016 by  Alex A. Granovsky,   *
+          *          Firefly Project, Moscow, Russia.          *
+          *   Some parts of this program include code due to   *
+          * work of Jim Kress, Peter Burger, and Robert Ponec. *
+          ******************************************************
+          *             Firefly Project homepage:              *
+          * http://classic.chem.msu.su/gran/firefly/index.html *
+          *                      e-mail:                       *
+          *               gran@classic.chem.msu.su             *
+          *This program is not a free software and is provided *
+          *exclusively to its registered users under the terms *
+          *       of Firefly package license agreement         *
+          * Unauthorized use of Firefly is strongly prohibited *
+          *   This program may not be redistributed without    *
+          * the specific, written permission of its developers.*
+          ******************************************************
+
+          ******************************************************
+          *  PARTIALLY BASED ON  US GAMESS VERSION 6 JUN 1999, *
+          *   US GAMESS VERSIONS  6 SEP 2001 AND 12 DEC 2003   *
+          *             FROM IOWA STATE UNIVERSITY             *
+          * M.W.SCHMIDT, K.K.BALDRIDGE, J.A.BOATZ, S.T.ELBERT, *
+          *   M.S.GORDON, J.H.JENSEN, S.KOSEKI, N.MATSUNAGA,   *
+          *          K.A.NGUYEN, S.J.SU, T.L.WINDUS,           *
+          *       TOGETHER WITH M.DUPUIS, J.A.MONTGOMERY       *
+          *         J.COMPUT.CHEM.  14, 1347-1363(1993)        *
+          ******************************************************
+
+
+ Core i7    / Win32  Firefly version running under OSX/Wine  
+ Running on Intel CPU:  Brand ID  0, Family  6, Model  44, Stepping  2
+ CPU Brand String    :  Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz 
+ CPU Features        :  x87 FPU, CMOV, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, HTT, MWAIT, EM64T
+ Data cache size     :  L1 32 KB, L2  256 KB, L3 12288 KB
+ max    # of   cores/package :  16
+ max    # of threads/package :  32
+ max     cache sharing level :  32
+ actual # of   cores/package :   6
+ actual # of threads/package :  12
+ actual # of threads/core    :   2
+ Operating System successfully passed SSE support test.
+
+
+ PARALLEL VERSION (UNIFIED) RUNNING USING   12 PROCESSES (RANKS)
+
+ EXECUTION OF FIREFLY BEGUN  8:30:08 20-JUN-2017    
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD> $CONTRL EXETYP=RUN $END                                                        
+ INPUT CARD> $CONTRL SCFTYP=RHF DFTTYP=B97D RUNTYP=OPTIMIZE MAXIT=200 ICHARG=+1             
+ INPUT CARD>         D5=.T. INTTYP=HONDO ICUT=11 ITOL=30 $END                               
+ INPUT CARD> $SYSTEM TIMLIM=3600 MWORDS=100 $END                                            
+ INPUT CARD> $SCF    DIRSCF=.T. NCONV=7 $END                                                
+ INPUT CARD> $BASIS  EXTFIL=.T. GBASIS=TZVP $END                                            
+ INPUT CARD> $DFTD   VERSN=4 $END                                                           
+ INPUT CARD> $SMP    HTTFIX=.F. CALL64=.T. $END                                             
+ INPUT CARD> $P2P    P2P=.T. XDLB=.T. $END                                                  
+ INPUT CARD> $STATPT OPTTOL=0.0001 NSTEP=100 $END                                           
+ INPUT CARD> $DATA                                                                          
+ INPUT CARD>Q4.H(1,0)1+ DFT-D4/def2TZVP & spherical basis functions. C4 geom opt            
+ INPUT CARD>CN 4                                                                            
+ INPUT CARD>                                                                                
+ INPUT CARD> C           6.0  -1.6301584268   3.1983554438   0.0136622138                   
+ INPUT CARD> C           6.0  -0.1005034295   3.5881761341   0.0136646555                   
+ INPUT CARD> N           7.0   0.3846991713   3.0295468495  -1.2268012712                   
+ INPUT CARD> N           7.0  -1.7887991030   2.4750807535  -1.2268889140                   
+ INPUT CARD> C           6.0  -0.6321774771   2.4791094112  -2.0076329744                   
+ INPUT CARD> O           8.0  -0.5385730460   2.1142480751  -3.1554204933                   
+ INPUT CARD> C           6.0   1.7652998074   2.9743848228  -1.6592664663                   
+ INPUT CARD> H           1.0   2.2949643223   3.8665001934  -1.3055649056                   
+ INPUT CARD> H           1.0   1.7534489782   2.9556186641  -2.7525315389                   
+ INPUT CARD> H           1.0   0.0515844872   4.6785113881   0.0142088293                   
+ INPUT CARD> H           1.0  -2.2851344559   4.0832403204   0.0133061614                   
+ INPUT CARD> N           7.0   0.3849435987   3.0283044976   1.2535281037                   
+ INPUT CARD> N           7.0  -1.7891230765   2.4760698337   1.2547122370                   
+ INPUT CARD> C           6.0  -0.6320124055   2.4786239726   2.0347229655                   
+ INPUT CARD> O           8.0  -0.5381329676   2.1132461322   3.1823053142                   
+ INPUT CARD> C           6.0   1.7653472871   2.9742237694   1.6866596773                   
+ INPUT CARD> H           1.0   2.2946602012   3.8667207595   1.3334676947                   
+ INPUT CARD> H           1.0   1.7529223616   2.9552896404   2.7799577166                   
+ INPUT CARD> H           1.0   0.0000000000   0.0000000000   4.0                            
+ INPUT CARD> $END                                                                           
+  100000000 WORDS OF MEMORY AVAILABLE
+
+ This job is executing on     1 unique host(s)
+ Minimum number of processes per host is:   12
+ Maximum number of processes per host is:   12
+
+ On master's host, detected   24 CPU core(s) in aggregate
+
+ Using processor-specific dynamic link DGEMM library code.
+
+
+ Creating thread pool to serve up to            128 threads.
+
+
+ Loading P2P interface library...

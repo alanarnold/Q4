@@ -1,0 +1,136 @@
+#libdir  /Applications/Firefly/ECP/
+ $CONTRL EXETYP=RUN $END
+ $CONTRL SCFTYP=RHF DFTTYP=B97D RUNTYP=ENERGY MAXIT=200 ICHARG=0
+         ECP=READ D5=.T. INTTYP=HONDO ICUT=11 ITOL=30 $END
+ $SYSTEM TIMLIM=3600 MWORDS=60 $END
+ $SCF    DIRSCF=.T. NCONV=7 $END
+ $BASIS  EXTFIL=.T. GBASIS=TZVP $END
+ $DFTD   VERSN=4 $END
+ $SMP    HTTFIX=.F. CALL64=.T. $END
+ $P2P    P2P=.T. XDLB=.T. $END
+ $STATPT OPTTOL=0.0001 NSTEP=100 $END
+ $DATA 
+I- in Q4 DFT-D4/def2TZVP with spherical basis functions and I ECP. C4h. I- ghost
+CNH 4
+
+ C           6.0  -1.6350097464   3.2113488283   0.0000000000
+ C           6.0  -0.1020286044   3.6008831995   0.0000000000
+ N           7.0   0.3813482947   3.0703069271  -1.2555768509
+ N           7.0  -1.8064133691   2.5151872600  -1.2561261443
+ C           6.0  -0.6394468343   2.5051753939  -2.0256242206
+ O           8.0  -0.5549232803   2.1731769762  -3.1868374450
+ C           6.0   1.7683995414   2.9794601957  -1.6720645349
+ H           1.0   2.2985932857   3.8741495506  -1.3188542844
+ H           1.0   1.7548317584   2.9578225552  -2.7653588702
+ H           1.0   0.0413962899   4.6948549446   0.0000000000
+ H           1.0  -2.2828699005   4.1043861813   0.0000000000
+ I         -53.0   0.0000000000   0.0000000000   0.0000000000
+ $END
+ $ECP 
+C-ECP NONE
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+N-ECP NONE
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+N-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+O-ECP NONE
+O-ECP
+O-ECP
+O-ECP
+O-ECP
+O-ECP
+O-ECP
+O-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+C-ECP
+H-ECP NONE
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+H-ECP
+I-ECP GEN     28     3
+  4      ----- f-ul potential     -----
+    -21.84204000       2     19.45860900       
+    -28.46819100       2     19.34926000       
+     -0.24371300       2      4.82376700       
+     -0.32080400       2      4.88431500       
+  7      ----- s-ul potential     -----
+     49.99429300       2     40.01583500       
+    281.02531700       2     17.42974700       
+     61.57332600       2      9.00548400       
+     21.84204000       2     19.45860900       
+     28.46819100       2     19.34926000       
+      0.24371300       2      4.82376700       
+      0.32080400       2      4.88431500       
+  8      ----- p-ul potential     -----
+     67.44284100       2     15.35546600       
+    134.88113700       2     14.97183300       
+     14.67505100       2      8.96016400       
+     29.37566600       2      8.25909600       
+     21.84204000       2     19.45860900       
+     28.46819100       2     19.34926000       
+      0.24371300       2      4.82376700       
+      0.32080400       2      4.88431500       
+  10      ----- d-ul potential     -----
+     35.43952900       2     15.06890800       
+     53.17605700       2     14.55532200       
+      9.06719500       2      6.71864700       
+     13.20693700       2      6.45639300       
+      0.08933500       2      1.19177900       
+      0.05238000       2      1.29115700       
+     21.84204000       2     19.45860900       
+     28.46819100       2     19.34926000       
+      0.24371300       2      4.82376700       
+      0.32080400       2      4.88431500     
+ $END
