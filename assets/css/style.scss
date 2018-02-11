@@ -4,7 +4,6 @@
 @import "{{ site.theme }}";
 
 figure {
-  float: right;
   width: 30%;
   text-align: center;
   font-style: italic;
@@ -16,9 +15,10 @@ figure {
 }
 figure img {
     vertical-align: top;
+    width: 300px;
 }
 figure figcaption {
-    text-align: center;
+    text-align: left;
     padding: 0.5em;
     border: thin silver solid;
 }
