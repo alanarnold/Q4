@@ -4,6 +4,7 @@
 @import "{{ site.theme }}";
 
 figure {
+  display: inline-block;
   width: 30%;
   text-align: center;
   font-style: italic;
