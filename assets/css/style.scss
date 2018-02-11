@@ -5,9 +5,9 @@
 
 figure {
   display: inline-block;
-  border: thin blue solid;
+  border: thin silver solid;
   width: 300px;
-  text-align: center;
+  text-align: left;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
@@ -16,10 +16,12 @@ figure {
 }
 figure img {
     vertical-align: top;
+    padding: 0.5em;
     width: 90%;
 }
 figure figcaption {
     text-align: left;
+    padding: 0.5em;
     width: 90%;
 }
 
