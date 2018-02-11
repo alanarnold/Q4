@@ -1,16 +1,31 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import 'jekyll-theme-cayman';
 
 figure {
-    display: inline-block;
-    margin: 20px; /* adjust as needed */
-    height: 300px; /* adjust as needed */
-}
-figure img {
-    vertical-align: top;
-}
-figure figcaption {
-    text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  &.is-showing {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  img {
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    figcaption {
+      left: 0%;
+    }
+    img {
+      transform: scale(1.1);
+    }
+  }
 }
