@@ -5,8 +5,8 @@
 
 figure {
   display: inline-block;
-  border: thin red solid;
-  max-width: 300px;
+  border: thin blue solid;
+  width: 300px;
   text-align: center;
   font-style: italic;
   font-size: smaller;
@@ -16,11 +16,12 @@ figure {
 }
 figure img {
     vertical-align: top;
-    width: 300px;
+    padding: 0.5em;
+    width: 90%;
 }
 figure figcaption {
     text-align: left;
     padding: 0.5em;
-    width: 100%;
+    width: 90%;
 }
 
