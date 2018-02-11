@@ -5,7 +5,8 @@
 
 figure {
   display: inline-block;
-  width: 30%;
+  border: thin red solid;
+  max-width: 300px;
   text-align: center;
   font-style: italic;
   font-size: smaller;
@@ -20,5 +21,6 @@ figure img {
 figure figcaption {
     text-align: left;
     padding: 0.5em;
+    width: 100%;
 }
 
